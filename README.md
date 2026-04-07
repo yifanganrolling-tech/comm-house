@@ -6,14 +6,24 @@
 
 ## 安装
 
-需要 [Claude Code](https://claude.ai/code) + [gstack](https://github.com/garry-cash/gstack)。
+### Claude Code
+
+需要 [Claude Code](https://claude.ai/code)。
 
 ```bash
-# 克隆到 gstack skills 目录
 git clone https://github.com/yifanganrolling-tech/comm-house.git ~/.claude/skills/comm-house
+```
 
-# 或者如果你用 gstack 管理 skills
-cd ~/.claude/skills && git clone https://github.com/yifanganrolling-tech/comm-house.git
+### OpenClaw
+
+需要 [OpenClaw](https://github.com/openclaw/openclaw)。
+
+```bash
+# 通过命令安装（推荐）
+openclaw skills install comm-house
+
+# 或手动克隆到 skills 目录
+git clone https://github.com/yifanganrolling-tech/comm-house.git ~/.openclaw/skills/comm-house
 ```
 
 ---
@@ -103,8 +113,7 @@ skill 会通过向导式问答收集三个输入，然后生成完整 Communicat
 
 ```
 comm-house/
-├── SKILL.md              # 技能主文件（由 SKILL.md.tmpl 生成，勿直接编辑）
-├── SKILL.md.tmpl         # 技能模板源文件
+├── SKILL.md              # 技能主文件
 ├── brand-context/
 │   └── biohyalux.md      # 润百颜/华熙生物品牌背景
 └── README.md
